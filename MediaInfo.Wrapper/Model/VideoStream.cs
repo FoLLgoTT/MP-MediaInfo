@@ -72,6 +72,14 @@ namespace MediaInfo.Model
     public AspectRatio AspectRatio { get; set; }
 
     /// <summary>
+    /// Gets or sets the video pixel aspect ratio.
+    /// </summary>
+    /// <value>
+    /// The video pixel aspect ratio.
+    /// </value>
+    public double PixelAspectRatio { get; set; }
+
+    /// <summary>
     /// Gets or sets a value indicating whether this <see cref="VideoStream"/> is interlaced.
     /// </summary>
     /// <value>
