@@ -314,6 +314,7 @@ namespace MediaInfo.Builder
     {
       var result = base.Build();
       result.FrameRate = Get<double>((int)NativeMethods.Video.Video_FrameRate, InfoKind.Text, TagBuilderHelper.TryGetDouble);
+      result.FrameRateOriginal = Get<double>((int)NativeMethods.Video.Video_FrameRate_Original, InfoKind.Text, TagBuilderHelper.TryGetDouble);
       result.FrameRateMode = Get<FrameRateMode>((int)NativeMethods.Video.Video_FrameRate_Mode, InfoKind.Text, TryGetFrameRateMode);
       result.Width = Get<int>((int)NativeMethods.Video.Video_Width, InfoKind.Text, TagBuilderHelper.TryGetInt);
       result.Height = Get<int>((int)NativeMethods.Video.Video_Height, InfoKind.Text, TagBuilderHelper.TryGetInt);

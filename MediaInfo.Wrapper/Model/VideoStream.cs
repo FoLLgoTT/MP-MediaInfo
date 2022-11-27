@@ -32,6 +32,14 @@ namespace MediaInfo.Model
     public double FrameRate { get; set; }
 
     /// <summary>
+    /// Gets or sets the original video frame rate.
+    /// </summary>
+    /// <value>
+    /// The original video frame rate.
+    /// </value>
+    public double FrameRateOriginal { get; set; }
+
+    /// <summary>
     /// Gets or sets the video frame rate mode.
     /// </summary>
     /// <value>
